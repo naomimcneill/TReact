@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Roboto&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+* {
+    color: rgb(36, 62, 99);
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+}
+
+
+.nav__container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__links {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+.nav__link {
+    font-size: 14px;
+    padding: 16px;
+    text-decoration: none;
+    justify-items: center;
+    font-weight:bolder;
+    margin-top: 40px;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.btn__menu {
+    background-color: rgb(36, 62, 99);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
