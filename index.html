@@ -5,20 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TReact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f6861b08e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <section id="landing">
     <nav>
         <div class="nav__container">
-            <img src="assets/treeact.logo.png" alt="TReact Logo" class="logo">
+            <img class="nav__logo--img" src="assets/T logo.svg" alt="TReact Logo" class="logo">
+            <div class="nav__logo--title">Treact</div> 
             <ul class="nav__links">
                 <li><a href="#" class="nav__link">About</a></li>
                 <li><a href="#" class="nav__link">Blog</a></li>
                 <li><a href="#" class="nav__link">Pricing</a></li>
                 <li><a href="#" class="nav__link">Contact Us</a></li>
                 <li><a href="#" class="nav__link">Login</a></li>
+                <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
             </ul>
-            <button class="btn__menu">Sign Up</button>
+             <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#Features" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                    </li>
+                    </ul>
+
         </div>
     </nav>
 </section>
