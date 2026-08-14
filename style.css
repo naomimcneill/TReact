@@ -255,6 +255,10 @@ nav {
     padding-top: 16px;
 }
 
+.header__description--img {
+    position: relative;
+}
+
 .header__img {
    max-width: 650px;
    margin-top: 168px;
@@ -363,25 +367,27 @@ nav {
     font-weight: 600;
     margin-left: 12px;
     margin-top: 16px;
+}
 
+.img__wrapper {
+    position: relative;
 }
 
 .hero__screenshot {
-    margin-top: 0;
+    position: relative;
     max-width: 45vw;
     border: 1px solid rgb(175, 175, 175);
-    position: relative;
-    top: 16px;
     z-index: 1;
-    transform: translateX(-10%);
+    top: -3rem;
+    right: 2rem;
 }
 
 .quality__grid {
-    transform: translateX(-36%) translateY(401%) scaleX(1) scaleY(1);
     width: 80px;
     height: 80px;
     position: absolute;
-    right: 0px;
+    right: .5rem;
+    bottom: .75rem;
     fill: rgb(100, 21, 255);
     --tw--text-opacity: 1;
     color: rgb(100, 21, 255, var(--tw-text-opacity));
@@ -392,24 +398,21 @@ nav {
 .hero__screenshot--2 {
     position: relative;
     border: none;
-    padding-left: 16px;
     max-width: 45vw;
-    margin: 0 auto;
-    z-index: 2;
-
+    left: 2rem;
+    bottom: 5rem;
+    z-index: 1;
 }
 
 .steps__grid {
-    transform: translateX(-212%) translateY(135%) scaleX(1) scaleY(1);
-    width: 10rem;
-    height: 10rem;
+    width: 160px;
+    height: 160px;
     position: absolute;
     fill: rgb(238, 230, 255);
     --tw--text-opacity: 1;
     color: rgb(100, 21, 255, var(--tw-text-opacity));
-    z-index: 0;
-    align-items: center;
-    justify-content: center;
+    left: 17.25rem;
+    bottom: .5rem;
 }
 
 
@@ -524,7 +527,7 @@ nav {
 
 
 .prototype__img {
-    max-width: 650px;
+    max-width: 550px;
     margin-right: 16px;
 }
 
@@ -826,10 +829,13 @@ nav {
 }
 
 .testimonial__profile--wrapper {
+    position: relative;
     display: flex;
     margin-left: 16px;
     margin-bottom: 108px;
     align-items: center;
+    
+    
 }
 
 
@@ -856,32 +862,36 @@ nav {
 }
 
 .btn__left {
-    position: relative;
-    margin-left: 200px;
+    position: absolute;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 999px;
     padding: 12px;
     background-color: rgb(233, 233, 233);
     transition: 300ms ease;
+    right: 4.5rem;
+    bottom: 2rem;
 }
 
 .divider {
+    position: absolute;
     border: 1px solid rgb(233, 233, 233);
     height: 24px;
     margin: 8px;
-    transform: translateY(6px);
-
-    
+    right: 3.5rem;
+    bottom: 2.25rem;
 }
 
 .btn__right {
-    position: relative;
+    position: absolute;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 999px;
     padding: 12px;
     background-color: rgb(233, 233, 233);
     transition: 300ms ease;
+    right: .5rem;
+    bottom: 2rem;
 }
+
 
 .btn__left:hover {
     background-color: rgb(219, 219, 219);
@@ -902,45 +912,52 @@ nav {
 .final__container {
     padding: 96px 0px;
     background-color: rgb(100, 21, 255);
-    border-radius: 8px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 2px;
     display: flex;
     justify-items: center;
     align-items: center;
     margin-left:24px;
     margin-right: 24px;
     margin-bottom: 96px;
+    overflow: hidden;
 }
 
 .final__row {
-   width: 100%;
-   margin: 0 auto;
-   max-width: 1024px;
-   padding: 0 32px;
-   display: flex;
-   justify-items: center;
-   align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    z-index: 0;
+
 }
 
 .start__blob--1 {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    top: 2rem;
+    left: -6rem;
     height: 20rem;
     width: 20rem;
-    transform: translateX(-15%)translateY(1450%);
     color: rgb(80,17,204);
-    opacity: .5;
+    opacity: .7;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .start__blob--2 {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 6rem;
+    right: -8rem;
     height: 20rem;
     width: 20rem;
-    transform: translateX(15%)translateY(1350%);
     color: rgb(80,17,204);
-    opacity: .5;
+    opacity: .7;
 }
 
 .final__title {
@@ -987,6 +1004,7 @@ nav {
     margin: 1px;
     line-height: 1.5;
     transition: 300ms ease;
+    z-index: 2;
 }
 
 .btn__contact-us:hover {
@@ -996,6 +1014,8 @@ nav {
 }
 
 .bottom__nav--wrapper {
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     background-color: rgb(100, 21, 255);
@@ -1005,13 +1025,12 @@ nav {
 
 .start__blob--3 {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 12rem;
+    left: -5rem;
     height: 20rem;
     width: 20rem;
-    transform: translateX(-4rem) translateY(320rem);
     color: rgb(80,17,204);
-    opacity: .5;
+    opacity: .6;
     z-index: 1;
     
 }
@@ -1049,24 +1068,15 @@ nav {
 
 }
 
-.start__blob--4 {
-    position: absolute;
-    transform: translateX(1rem) translateY(16rem);
-    bottom: 0px;
-    left: 0px;
-    height: 20rem;
-    width: 20rem;
-    color: rgb(80,17,204);
-    opacity: .5;
-    z-index: .5;
-}
 
 .footer {
+    position: relative;
     display: flex;
     background-color: rgb(100, 21, 255);
-    padding: 96px 16px;
+    padding: 32px 16px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .footer__logo {
@@ -1091,6 +1101,7 @@ nav {
 }
 
 .footer__socials {
+    position: relative;
     display: flex;
     transform: translateX(168px);
     z-index: 2;
@@ -1101,8 +1112,8 @@ nav {
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
-    padding: 12px;
-    margin: 8px;
+    padding: 16px;
+    margin: 12px;
     background-color: rgb(255, 255, 255);
     transition: 300ms ease;
     z-index: 2;
@@ -1113,6 +1124,26 @@ nav {
     background-color: rgb(219, 219, 219);
     z-index: 2;
 }
+
+.start__blob--4 {
+    position: absolute;
+    top: 4rem;
+    right: -4rem;
+    height: 20rem;
+    width: 20rem;
+    color: rgb(80,17,204);
+    opacity: .7;
+    z-index: 1;
+}
+
+/* Mid-size Screens */
+@media (max-width: 1080px) {
+    .steps__grid {
+        width: 80px;
+        height: 80px;
+    }
+}    
+
 
 
 
