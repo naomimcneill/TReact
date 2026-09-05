@@ -227,11 +227,6 @@ nav {
     position: absolute;
 }
 
-.header__email--input:on-click {
-    border-color: rgb(100, 21, 255);
-
-}
-
 
 .header__email--btn {
     background-color: rgb(100, 21, 255);
@@ -243,6 +238,7 @@ nav {
     font-weight: 600;
     position: absolute;
     right: .5rem;
+    
 
 }
 
@@ -471,7 +467,7 @@ nav {
     fill: rgb(238, 230, 255);
     --tw--text-opacity: 1;
     color: rgb(100, 21, 255, var(--tw-text-opacity));
-    left: 51%;
+    left: 19.5rem;
     transform: translateX(-50%);
     bottom: 43px;
 }
@@ -1065,7 +1061,9 @@ nav {
     position: relative;
     display: flex;
     justify-content: space-between;
-    z-index: 0
+    z-index: 0;
+    margin: 0 auto;
+    max-width: 90%;
 
 
 }
@@ -1096,19 +1094,20 @@ nav {
     font-size: 30px;
     font-weight: 700;
     color: #f7fafc;
-    max-width: 40%;
     line-height: 1.5;
     z-index: 2;
     position: relative;
-    left: 10rem;
-    bottom: 1rem;
+    width: 50%;
+    max-width: 476px;
     
 }
 
 .start__buttons {
-    position: relative;
-    transform: translateX(-40%) translateY(3%);
     z-index: 2;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -1117,12 +1116,12 @@ nav {
     color: #f7fafc;
     border: none;
     border-radius: 500px;
-    padding: 20px 40px;
+    padding: 16px 24px;
     font-size: 16px;
     font-weight: 700;
-    margin-right: 16px;
     transition: 300ms ease;
     box-shadow: rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px;
+    margin: 0 16px;
 }
 
 .btn__get-started:hover {
@@ -1138,11 +1137,9 @@ nav {
     color: #f7fafc;
     border-radius: 999px;
     border: 1px solid rgb(200, 200, 200);
-    padding: 20px 40px;
+    padding: 16px 24px;
     font-size: 16px;
     font-weight: 700;
-    margin-right: 48px;
-    margin-left: 16px;
     line-height: 1.5;
     transition: 300ms ease;
 }
@@ -1315,13 +1312,6 @@ nav {
         max-width: 1096px;
     }
 
-    .final__title {
-        left: 6rem;
-    }
-
-    .start__buttons {
-        left: 6rem;
-    }
 
     .hero__screenshot {
         width: 512px;
@@ -1349,7 +1339,7 @@ nav {
         width: 80px;
         height: 80px;
         bottom: 75px;
-        transform: translateX(-3.825rem);
+        left: 20rem;
     }
 
 
@@ -1477,6 +1467,10 @@ nav {
     .hero__screenshot--2 {
         max-width: 400px;
     }
+
+    .steps__grid {
+        left: 18.5rem;
+    }
     
     .steps__title--bold {
         font-size: 36px;
@@ -1538,7 +1532,7 @@ nav {
     .start__buttons {
         position: absolute;
         width: 100%;
-        transform: translateX(-8%) translateY(100%);
+        margin-top: 64px;
         padding-top: 8px;
 
     }
@@ -1641,6 +1635,7 @@ nav {
         flex-direction: column-reverse;
     }
 
+
     .section__title {
         margin: 0 auto;
         margin-top: 32px;
@@ -1660,6 +1655,7 @@ nav {
         text-align: center;
         padding: 0;
         align-items: center;
+        max-width: 90%;
     }
 
     .quality__para {
@@ -1678,6 +1674,7 @@ nav {
 
     .header__description {
         width: 512px;
+        max-width: 90%;
     }
 
     .btn__learnmore {
@@ -1696,7 +1693,7 @@ nav {
 
     .steps__grid {
         bottom: 1rem;
-        transform: translateX(-2.75rem);
+        left: 16.5rem;
     }
 
     .steps__description--wrapper {
@@ -1755,6 +1752,10 @@ nav {
     .value__title {
         justify-content: center;
         margin-top: 32px;
+    }
+
+    .values__list {
+        width: 50%;
     }
 
     .pricing__title--header {
@@ -1880,6 +1881,7 @@ nav {
 
     .header__description--wrapper {
         width: 100%;
+
     }
 
     .header__description {
@@ -1891,7 +1893,7 @@ nav {
     }   
 
     .header__para {
-        max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
         margin-top: 32px;
     }
@@ -1901,12 +1903,11 @@ nav {
         align-items: center;
         position: relative;
         height: auto;
-        margin-bottom: 150px;
 
     }
 
     .header__email--input {
-        max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
         width: 456px;
         padding: 24px 48px;
@@ -1915,19 +1916,34 @@ nav {
 
     .header__email--btn {
         padding: 24px;
-        top: 6rem;
-        right: 0;
         width: 456px; 
-        position: absolute; 
+        position: static; 
         border-radius: 999px;
         font-size: 16px;
         font-weight: 600;
+        max-width: 90%;
+        margin-top: 96px;
         
+    }
+
+    .img__sub {
+        max-width: 90%;
+    }
+
+    .header__img {
+        max-width: 90%;
     }
 
     .features__title--bold, .pricing__title--header {
         text-align: center;
         font-size: 36px;
+        width: 90%;
+        
+    }
+
+    .header__para--feature {
+        max-width: 90%;
+        padding: 0 12px;
     }
 
     .feature__row {
@@ -1952,14 +1968,33 @@ nav {
 
     .header__title--bold, .steps__title--bold{
         font-size: 30px;
+        width: 90%;
+    }
+
+    .steps__title--bold {
+        padding-left: 24px;
     }
 
     .header__row--middle {
         margin-bottom: 56px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
+    .quality__grid {
+        right: 0;
+
+    }
+
+
     .values__list {
-        width: 296px;
+        width: 90%;
+    }
+
+    .value__para {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 16px;
     }
 
     .header__description--add {
@@ -1974,10 +2009,23 @@ nav {
         font-size: 36px;
     }
 
+    .pricing__para {
+        max-width: 90%;
+    }
+
+    .plans {
+        left: 1rem;
+    }
+
     .section__description {
         margin-top: 56px;
         padding-left: 0;
     }
+
+    .testimonial__description--wrapper {
+        width: 90%;
+    }
+
 
     .testimonial__para {
         margin-left: 0;
@@ -2009,7 +2057,7 @@ nav {
     }
 
     .final__container {
-        padding: 5rem 5rem;
+        padding: 2rem 2rem;
     }
 
     .final__row {
@@ -2020,29 +2068,25 @@ nav {
     .final__title {
         max-width: 400px;
         font-size: 24px;
-        top: -5rem;
     }
 
     .start__buttons {
         display: flex;
         flex-direction: column;
         transform: translateX(0) translateY(0);
-        top: 64px;
         align-items: center;
         margin: 0 auto;
         max-width: 400px;
         left: 0;
+        position: relative;
     }
 
     .btn__get-started{
-        margin-top: 16px;
-        margin-right: 0;
         padding: 12px 24px;
         font-size: 14px;
     }
 
     .btn__contact-us {
-        margin: 0 auto;
         margin-top: 16px;
         padding: 12px 24px;
         font-size: 14px;
@@ -2051,13 +2095,14 @@ nav {
        
     .start__blob--1 {
         position: absolute;
-        left: -14rem;
+        left: -8rem;
+        top: 10rem;
     }
 
     .start__blob--2 {
         position: absolute;
-        bottom: 13rem;
-        right: -12rem;
+        bottom: 17rem;
+        right: -10rem;
     }
 
     .bottom__nav--wrapper {
@@ -2072,7 +2117,7 @@ nav {
 
     .start__blob--4 {
         position: absolute;
-        top: 8rem;
+        top: 6rem;
         right: -8rem;
     }
 
@@ -2087,3 +2132,4 @@ nav {
 
 
 }
+
